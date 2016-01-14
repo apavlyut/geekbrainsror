@@ -24,7 +24,7 @@
     - https://pragprog.com/book/jvrails2/crafting-rails-4-applications
     - https://leanpub.com/everydayrailsrspec
 
-** Home task to do **
+**Home task to do**
 
 1. Install Ruby and Rails (if not yet) on your environment:
   - Common info:  https://www.ruby-lang.org/en/documentation/installation/
