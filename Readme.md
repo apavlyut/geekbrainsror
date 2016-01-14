@@ -28,8 +28,9 @@
 > See, for example, screencast with [introduction of Rails stack: ~30 min](https://www.youtube.com/watch?v=5sCcXrKr1gQ) for my new client (who works with Worpdress right now) with development and deployment process, which contains:
   1. creation of rails app
   2. deploying to Heroku
-  2. configuring AWS Route 53 for domain cname alias
-  4. and sending email from app
+  3. configuring AWS Route 53 for domain cname alias
+  4. HTTP-basic authorization
+  5. and sending email from app
 
 **Home task to do**
 
