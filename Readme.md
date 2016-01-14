@@ -41,7 +41,7 @@
 3. Acceptance Criteria of Home Task:
 
   1. (* required) Installed Ruby (* required)
-  2. (* required) Read the 1-3 chapter of Why's
+  2. (* required) Read the 1-3 chapter of Why's guide http://poignant.guide/
   3. Get some (as you can) completion of Why's "Try ruby" course.
   3. (* required) Write down at least 3 question to ask about language or your environment.
   5. Write down summary of your insites about first course-day's workaround with ruby and friends.
