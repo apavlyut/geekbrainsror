@@ -24,6 +24,13 @@
     - https://pragprog.com/book/jvrails2/crafting-rails-4-applications
     - https://leanpub.com/everydayrailsrspec
 
+
+> See, for example, screencast with [introduction of Rails stack: ~30 min](https://www.youtube.com/watch?v=5sCcXrKr1gQ) for my new client (who works with Worpdress right now) with development and deployment process, which contains:
+  1. creation of rails app
+  2. deploying to Heroku
+  2. configuring AWS Route 53 for domain cname alias
+  4. and sending email from app
+
 **Home task to do**
 
 1. Install Ruby and Rails (if not yet) on your environment:
@@ -37,12 +44,6 @@
   - Sign Up
   - Start playing with ruby language from reading tasks in left part and doing it in right part of browser window.
   - During course write down your questions about language or strange things.
-
-> See, for example, screencast with [introduction of Rails stack: ~30 min](https://www.youtube.com/watch?v=5sCcXrKr1gQ) for my new client (who works with Worpdress right now) with development and deployment process, which contains:
-  1. creation of rails app
-  2. deploying to Heroku
-  2. configuring AWS Route 53 for domain cname alias
-  4. and sending email from app
 
 3. Acceptance Criteria of Home Task:
 
