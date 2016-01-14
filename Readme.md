@@ -37,6 +37,7 @@
   - Sign Up
   - Start playing with ruby language from reading tasks in left part and doing it in right part of browser window.
   - During course write down your questions about language or strange things.
+  - See for example my introdution of Rails development and deploymetn to my new client (who works with Worpdress right now), wich contains creation of rails app, deploying to Heroku, configuring AWS Route 53 for domain cname alias, and sending email from app: https://www.youtube.com/watch?v=5sCcXrKr1gQ
 
 3. Acceptance Criteria of Home Task:
 
