@@ -9,5 +9,8 @@
 3. Manager apply lead order on website and client receive another email with link to download, which has expiration date for one day.
 4. As a lead i can download 'example-research.pdf' by clicking link.
 5.(** superstar) PDF researches can be creating in Manager panel with freetyping text in rich text edit form.
+6. Deploy to Heroku and attach link.
+6a.(**) Deploy to Amazon EC2 VPS and attach link in comments.
+7.(**) Cover with capybara.
 
 GO CODE!
