@@ -26,7 +26,7 @@
 
 
 > See, for example, screencast with [introduction of Rails stack: ~30 min](https://www.youtube.com/watch?v=5sCcXrKr1gQ) for my new client (who works with Worpdress right now) with development and deployment process, which contains:
-  1. creation of rails app
+  1. creation of rails app (cuted `rails new george-law` command)
   2. deploying to Heroku
   3. configuring AWS Route 53 for domain cname alias
   4. HTTP-basic authorization
@@ -54,4 +54,7 @@
   3. (* required) Write down at least 3 question to ask about language or your environment.
   5. Write down summary of your insites about first course-day's workaround with ruby and friends.
 
+4. Advanced star-level home task
+  - see advanced-home-task.md
+  
 Get luck! See you in next lesson on 20.01.2016.
