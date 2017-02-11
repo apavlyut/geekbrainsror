@@ -13,8 +13,6 @@ end
 alex = Geek.new
 puts alex.make_some_voice()
 
-# What does the following code print? Explain the result.
-
 # 2. Что этот код напечатает в STDOUT? Поясните.
 class Computer
   def initialize
