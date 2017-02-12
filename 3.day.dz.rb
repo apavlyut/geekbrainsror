@@ -1,3 +1,5 @@
+## Answer this questions, and comment why is this happening
+
 # 1. Что выведет этот код? Почему перменная @message доступна в методе make_some_voice()
 
 class Geek
