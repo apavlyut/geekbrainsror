@@ -103,13 +103,13 @@ fish.print_coords
 fish.kill_fish!
 fish.swim!(10, 10)
 puts()
-# Рыба №1
+# Рыба №2
 jeff_fish = Fish.new("Jeff")
 jeff_fish.swim!(-4, 2)
 jeff_fish.print_coords
 jeff_fish.kill_fish!
 puts()
-# Рыба №1
+# Рыба №3
 godzilla_fish = Fish.new("GODZILLA")
 godzilla_fish.swim!(-2, -2)
 godzilla_fish.print_coords
