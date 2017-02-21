@@ -33,7 +33,6 @@ end
 
 spider = Spider.new
 
-
 20.times do |i|
   spider.add_link("link_#{i+1}")
 end
