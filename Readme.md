@@ -1,3 +1,6 @@
+Логин - любой, пароль - secret
+app is now deployed to https://dry-hollows-82648.herokuapp.com/
+---
 Что нужно сделать.
 
 A) Выполнить домашку до рабочего состояния.
