@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+}
+.container-fluid {
+    
+    height: 100%;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bg-grey{
+	background-color: #fefefe;
+}
