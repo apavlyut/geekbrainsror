@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello my friend</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid wrapper bg-grey">
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    	<div class="navbar-header">
+      	<a class="navbar-brand" href="/">CookieRack</a>
+    	</div>
+    <ul class="nav navbar-nav">
+      <li><a href="/about">About page</a></li>
+    </ul>
+  </div>
+</nav>
+	<div class="container">
+ 	<% unless @friend.instance_of? nil.class %>
+ 	<div class="row">
+	<div class="col-md-4 col-md-offset-3"><h1>Hello you have a friend with cookies</h1></div>
+	</div>
+	<div class="row">
+	<div class="col-md-4 col-md-offset-3"><p><%=show_friend%></p></div>
+	</div>
+	<div class="row">
+	<div class="col-md-4 col-md-offset-3">
+	<a class="btn btn-default" href="/deletefriend">take away friend`s cookies</a></button>
+	</div>
+	</div>
+	<% else %>
+	<div class="row">
+	<div class="col-md-4 col-md-offset-3">
+	<h1>You don`t have any friend who has cookies</h1>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-4 col-md-offset-3">
+	<form method="post" action="/post">
+	  <div class="form-group">
+	  	<label for="friend">Write name of your friend who deserve cookies</label>
+		<input class="form-control" id="friend" type="text" name="friend" value="friend">
+	  </div>
+		<input class="btn btn-default" type="submit" name="submit"  value="Add friend">
+	</form>
+	</div>
+	</div>
+	<% end %>
+	</div>
+</div>
+</body>
+</html>
