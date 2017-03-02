@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style>
+		footer {
+			background-color: #555;
+			padding: 20px;
+			margin-top: 10px;
+		}
+		</style>
+		<title>Mikhail Yurin's Page</title>
+	</head>
+
+	<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mikhail Yurin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/messages">Your last message</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	<div class="container theme-showcase" role="main">
+		
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-2"><img src="/images/ava3.jpg" alt="Ava Mikhello!"></div>
+				<div class="col-md-10">
+					<h1>Let's be friends!</h1>
+					<p> Here you could send me a message.
+						Simply type what you want in the field below and click 'Send'</p>					
+				</div>
+			</div>
+
+		</div>
+				
+		<form action="/post_message" method="post" accept-charset="utf-8">
+			<div class="form-group">
+				<label for="comment">Your message:</label>
+				<textarea class="form-control" rows="5" id="comment" name="message_to_me"></textarea>
+			</div>
+			<button type="submit" class="btn btn-lg btn-default">Send &rarr;</button>
+		</form>	
+		
+
+	</div> <!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright &copy; 2017 by Mikhal Yurin</p>
+      </div>
+    </footer>
+	
+	</body>
+</html>

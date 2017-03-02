@@ -1,3 +1,10 @@
+> Here is my rack application on Heroku - [link](https://sheltered-dawn-95809.herokuapp.com/)
+
+> While there is no solution to generate the messages page after filling the cookie,
+> you have to click on the menu item "Your last message" right after the message was sent.
+
+---
+
 Что нужно сделать.
 
 A) Выполнить домашку до рабочего состояния.
