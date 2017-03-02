@@ -7,6 +7,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   rack
 
 BUNDLED WITH
