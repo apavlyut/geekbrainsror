@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hollow man</title>
+  </head>
+  <body>
+    <h1>Hallow again</h1>
+    <div>Это миничат с применением MongoDB, отображает только 5 последних сообщений</div>
+    <form style="margin: 10px 10px 10px 10px" class="" action="/fishy_chat" method="post">
+      <input style="margin: 5px 5px 5px 5px" type="text" name="name" value="" placeholder="Введите Ваше имя" required><br>
+      <textarea style="margin: 5px 5px 5px 5px" name="message" cols="50" rows="3" placeholder="Введите сообщение" required></textarea><br>
+      <input style="margin: 5px 5px 5px 5px" type="submit" name="" value="Отправить сообщение">
+    </form>
+    <% @messages.each do |message| %>
+    <div>
+      <h3><%= message['name'] %> <%= message['date'] %></h3>
+        <%= message['message'] %>
+    </div>
+    <%end%>
+  </body>
+<html>
