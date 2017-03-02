@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  announce: MyText
+  body: MyText
+  category: one
+  published: false
+
+two:
+  title: MyString
+  announce: MyText
+  body: MyText
+  category: two
+  published: false
