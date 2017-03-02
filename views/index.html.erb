@@ -5,7 +5,12 @@
     <title>Test</title>
   </head>
   <body>
-    <h1>Hallow!</h1>
+    <%if guest_name == 'незнакомец'%>
+      <h1>Hallow!</h1>
+    <%else%>
+      <h1>Привет <%=guest_name%></h1>
+    <%end%>
+
     <div> Это тестовый сайт на Руби с использованием Rack.</div>
     <div> Здесь реализованы следующие возможности:
       <ul>

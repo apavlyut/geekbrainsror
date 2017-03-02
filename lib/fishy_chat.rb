@@ -10,7 +10,7 @@ class Fishy_Chat
     when '/'
       Rack::Response.new(render("index.html.erb"))
     when '/form'
-      got_name = @request.params["name"] || ''
+      @name = @request.params["guest_name"]
       Rack::Response.new(render("form.html.erb"))
     # when '/fishy_chat'
     #   post_name = request.params["name"] || ''
@@ -18,10 +18,10 @@ class Fishy_Chat
     #   @mango.add_new_message(post_name, post_message)
     #   @messages = @mango.get_messages
     #   Rack::Response.new(render("fishy_chat.html.erb"))
-    when 'form_check'
+  when '/form_check'
       Rack::Response.new do |response|
         response.set_cookie('guest_name',
-        @request.params["name"])
+        @request.params["guest_name"])
         response.redirect('/form')
       end
     when '/json'
