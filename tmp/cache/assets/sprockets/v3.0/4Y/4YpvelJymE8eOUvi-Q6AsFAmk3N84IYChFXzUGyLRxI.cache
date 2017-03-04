@@ -1,0 +1,11 @@
+I"ÿ(function() {
+  App.comments = App.cable.subscriptions.create("CommentsChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {
+      return $('#comments').append(data_comment);
+    }
+  });
+
+}).call(this);
+:ET
