@@ -1,0 +1,27 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+<div class="col-md-6 col-md-offset-3">
+<h1 class="text-center">Latest posts</h1>
+<div class="row">
+    <%if @posts.blank?%>
+    <p>Nothing is here yet :-(</p>
+    <%end%>
+    <% @posts.each do |post| %>
+    <div class="row">
+      <h2 class="text-center">  <%= post.title %></h2>
+    </div>
+    <div class="row">
+    <p class="body_post"><%= post.body %></p>
+    </div>
+     <div class="row">
+        <%= link_to 'Show', post, class: "btn btn-default" %>
+        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-default"%>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default"%>
+    </div>
+    <% end %>
+</div>
+<div class="row new_post"><%= link_to 'New Post', new_post_path, class: "btn btn-default pull-right" %></div>
+
+
+</div>
+</div>
