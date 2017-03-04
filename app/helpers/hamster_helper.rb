@@ -1,0 +1,2 @@
+module HamsterHelper
+end

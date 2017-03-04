@@ -1,14 +1,5 @@
-require_relative 'lib/geeks'
-require 'rack/lobster'
+# This file is used by Rack-based servers to start the application.
 
-use Rack::Reloader, 0
+require_relative 'config/environment'
 
-use Rack::Static, :urls => ['/assets', '/images'], :root => 'public'
-use Rack::Auth::Basic, "Geeks 2.0" do |username, password|
-  Rack::Utils.secure_compare('secret', password)
-end
-
-run Rack::Lobster.new
-
-run Geek.new
-
+run Rails.application
