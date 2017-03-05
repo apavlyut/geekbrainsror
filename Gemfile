@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # authetification
-gem 'devise'
+gem 'devise', '~> 4.2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
