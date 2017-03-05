@@ -1,6 +1,6 @@
 class GuestsController < ApplicationController
-  before_action :authenticate_user!
-  # , :set_guest, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user! 
+  before_action :set_guest, only: [:show, :edit, :update, :destroy]
 
   # GET /guests
   # GET /guests.json
