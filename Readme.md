@@ -1,26 +1,24 @@
-Что нужно сделать к 10му уроку.
+# README
 
-Ваше предыдущее Rack приложение размещенное на heroku и предоставленное мне через pull-request сделать на rails и так же выложить на heroku и сделать очередной pull-request.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Сделать это можно так:
+Things you] may want to cover:
 
-1. В своем репозитории в своей ветке удаляете все файлы (ваш rack в гите сохранилось уже).
-2. Создаете рельсовое приложение, делаете его, комитите так чтобы все приложение было у вас в корне вашей ветке
-3. Пушите на хероку (с перезаписью)
-```shell
-git push heroku your_branch:master
-```
-4. Пушите в свою ветку в гитхабе
-```shell
-git push -f origin your_branch
-```
-5. Делаете пулл реквест (он может ругаться что нельзя смерджить)
-6. Profit
+* Ruby version
 
-Все вопросы принимаются в следующем порядке:
+* System dependencies
 
-1. Указываете пункт задания на котором у вас проблема
-2. Отмечаете чем закончился предыдущий пункт перед проблемой.
-3. Получаете ответ что делать дальше.
+* Configuration
 
-Пример проведенной коммуникации с вымышленным аккаунтом в котором я все это провернул находится тут https://github.com/apavlyut/geekbrainsror/pull/1
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

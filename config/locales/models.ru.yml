@@ -1,0 +1,16 @@
+ru:
+  helpers:
+    links:
+      edit: Изменить
+      new: Создать
+    actions: Действия
+  activerecord:
+    models:
+      user: Пользователь
+    attributes:
+      user:
+        name: Имя
+        email: Мыло
+        password: Пароль
+        created_at: Дата создания
+        password_confirmation: Подтверждение пароля

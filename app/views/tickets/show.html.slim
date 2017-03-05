@@ -1,0 +1,14 @@
+p#notice = notice
+
+.row
+  .col-xs-8
+    .card class="#{ticket_class(@ticket)}"
+      .card-block
+        h4.card-title= @ticket.title
+        blockquote= @ticket.body
+        small
+          = @ticket.user.name
+      .card-block
+        = link_to 'Закрыть', close_ticket_path(@ticket), class: 'card-link'
+        = link_to 'Открыть', open_ticket_path(@ticket), class: 'card-link'
+        = link_to 'Отклонить', reject_ticket_path(@ticket), class: 'card-link'

@@ -1,0 +1,14 @@
+nav.navbar.navbar-toggleable-sm.navbar-light.bg-faded
+  .container
+    = link_to 'Тикетс', root_path, class: 'navbar-brand'
+    ul.navbar-nav
+      li.nav-item
+        = link_to 'Пользователи', users_path, class: 'nav-link'
+      - if signed_in?
+        li.nav-item
+          = link_to 'Тикеты', tickets_path, class: 'nav-link'
+        li.nav-item
+          = link_to "(#{current_user.name}) Выйти", logout_path, class: 'nav-link'
+      - else
+        li.nav-item
+          = link_to 'Войти', login_path, class: 'nav-link'

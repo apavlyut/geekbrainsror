@@ -1,0 +1,21 @@
+h3
+  'Тикеты
+  .pull-xs-right
+    = link_to 'Новый тикет', new_ticket_path, class: 'btn btn-primary'
+
+table.table.table-stripped
+  thead
+    tr
+      th ID
+      th Тикет
+      th Статус
+      th Автор
+
+  tbody
+    - @tickets.each do |ticket|
+      tr
+        td = ticket.id
+        td = link_to ticket.title, ticket
+        td = ticket.status
+        td = ticket.user
+br
