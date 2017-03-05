@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Имя:</strong>
   <%= @guest.name %>
 </p>
 
 <p>
-  <strong>Message:</strong>
+  <strong>Примечание:</strong>
   <%= @guest.message %>
 </p>
 
-<%= link_to 'Edit', edit_guest_path(@guest) %> |
-<%= link_to 'Back', guests_path %>
+<%= link_to 'Редактировать', edit_guest_path(@guest) %> |
+<%= link_to 'Назад', guests_path %>

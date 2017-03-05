@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name, "Имя" %>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <%= f.label :message %>
+    <%= f.label :message, "Сообщение" %>
     <%= f.text_field :message %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Отправить изменения"%>
   </div>
 <% end %>

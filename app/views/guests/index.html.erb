@@ -16,17 +16,17 @@
       <tr>
         <td><%= guest.name %></td>
         <td><%= guest.message %></td>
-        <td><%= link_to 'Show', guest %></td>
-        <td><%= link_to 'Edit', edit_guest_path(guest) %></td>
-        <td><%= link_to 'Destroy', guest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', guest %></td>
+        <td><%= link_to 'Редактировать', edit_guest_path(guest) %></td>
+        <td><%= link_to 'Удалить', guest, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-<%= link_to 'New Guest', new_guest_path %>
+<%= link_to 'Новый гость', new_guest_path %>
 <br>
 <% if user_signed_in? %>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  <%= link_to('Выйти', destroy_user_session_path, :method => :delete) %>
 <% end %>
