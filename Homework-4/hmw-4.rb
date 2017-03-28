@@ -1,9 +1,13 @@
 require 'open-uri'
+require 'openssl'
+require 'open_uri_redirections'
 require 'nokogiri'
 require 'date'
+require 'net/http'
+#require 'uri'
 require_relative 'lib/links_file.rb'
 
-puts'Введите интересующий интернет-рессурс в формате example.com:'
+puts'Введите интересующий интернет-рессурс в формате example.com или www.example.com:'
 link_file=Links_File.new(gets.chomp)
 link_file.collection_of_links
 puts 'Вывести содержимое файла c cылками?(1-да, 2-нет):'
