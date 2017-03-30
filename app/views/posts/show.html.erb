@@ -1,0 +1,24 @@
+<div class="container">
+<div class="col-md-6 col-md-offset-3">
+<p id="notice"><%= notice %></p>
+
+  <h1><%= @post.title %></h1>
+
+<p>
+  <%= @post.body %>
+</p>
+<%= link_to 'Back', posts_path, class:'btn btn-default' %>
+
+<%= link_to 'Edit', edit_post_path(@post), class:'btn btn-default' %>
+
+<h2>Comments</h2>
+
+<div id="comments">
+
+  <%= render(@post.comments) || 'nothing is here yet :-('%>
+
+</div>
+<h3>add new comment </h3>
+<div><%= render 'comments/new' , post: @post %></div>
+</div>
+</div>

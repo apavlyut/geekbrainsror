@@ -1,7 +1,5 @@
-require './lib/Router'
+# This file is used by Rack-based servers to start the application.
 
-use Rack::Reloader
+require_relative 'config/environment'
 
-use Rack::Static, :urls => ['/css'], :root => 'public'
-
-run Router.new
+run Rails.application

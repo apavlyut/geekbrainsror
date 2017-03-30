@@ -1,0 +1,12 @@
+
+<%= form_for([@post, Comment.new], remote: true, ) do |form| %>
+<p>Your comment:</p>
+<div class="form-group">
+<%= form.text_area :body, size: '50x5', class: 'form-control' %><br>
+</div>
+<div class="form-group">
+<%= form.submit  class: 'btn btn-default'%>
+</div>
+<% end %>
+
+

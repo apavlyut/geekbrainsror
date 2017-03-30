@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+<div class="wrapper">
+<div class="container-fluid wrapper bg-grey">
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">CookieBlog</a>
+      </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/about">About page</a></li>
+    </ul>
+  </div>
+</nav>
+<%= yield %>
+
+
+</div>
+
+<footer class="footer">Rails based blog from Anton Smagin</footer>
+</div>
+  </body>
+</html>
