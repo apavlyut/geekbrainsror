@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Блог Улетова Антона</title>
+  <link rel="stylesheet" href="/assets/application.css">
+</head>
+<body>
+	<div id="content">
+    <div id="header">
+      <a href="/">Главная</a>
+      <span>/</span>
+
+      <a href="/example">Примеры работ</a>
+    </div>
+      <h1>Личный блог Антона Улетова</h1>
+      <div id="center">
+          <img src="https://avatars3.githubusercontent.com/u/20359696?v=3&u=f8a3d7ca291c5a482e7a55aab184292fed544811&s=400" alt="фотография">
+
+          <div id="box_text">
+            <p>
+              Добрый день, <%= friend_name %>. Меня зовут <b>Антон Улетов</b>.
+              Я - <i>начинающий программист</i>.
+            </p>
+                
+            <p>
+              Я совсем недавно встал на этот путь, но уже успел изучить основы HTML, CSS, JavaScript и Ruby on Rails.
+            </p>
+                
+            <p>
+              На этом пути мне помогает IT-портал <a href="https://geekbrains.ru/">GeekBrains</a>
+            </p>
+
+            <p>
+              Этот сайт является Rack-приложением, которое написано на Ruby.
+            </p>
+            
+            <hr>
+            <br>
+            <p>
+              Укажи, пожалуйста, как я могу к тебе обращаться.
+            </p>
+        
+            <form class="" action="/name_form" method="post">
+              <input type="text" name="friend_name" value="">
+              <input type="submit" name="" value="Отправить имя">
+            </form>
+            <br>
+            <hr>
+            <br>
+            <p>
+              С помощью этой формы можно проверить переход на страницу, которой не существует.
+            </p>
+        
+            <form class="" action="/error_form" method="post">
+              <input type="text" name="friend_name" value="">
+              <input type="submit" name="" value="Отправить форму">
+            </form>
+          </div>
+      </div>
+    </div>
+  <div id="footer">
+    Copyright &copy; <%= year%> <a href="https://geekbrains.ru/">GeekBrains</a>
+  </div>
+</body>
+</html>
