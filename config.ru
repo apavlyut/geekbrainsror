@@ -1,4 +1,5 @@
-require 'fishy_chat'
+# This file is used by Rack-based servers to start the application.
 
-use Rack::Reloader, 0
-run Fishy_Chat.new
+require_relative 'config/environment'
+
+run Rails.application

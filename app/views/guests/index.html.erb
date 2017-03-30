@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Список гостей</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Имя</th>
+      <th>Примечание</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guests.each do |guest| %>
+      <tr>
+        <td><%= guest.name %></td>
+        <td><%= guest.message %></td>
+        <td><%= link_to 'Показать', guest %></td>
+        <td><%= link_to 'Редактировать', edit_guest_path(guest) %></td>
+        <td><%= link_to 'Удалить', guest, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'Новый гость', new_guest_path %>
+<br>
+<% if user_signed_in? %>
+  <%= link_to('Выйти', destroy_user_session_path, :method => :delete) %>
+<% end %>
