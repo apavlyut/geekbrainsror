@@ -9,12 +9,12 @@
 </head>
 <body>
 <h1>Hello, this  is homyak from Marina Igumnova</h1>
-<img src="/images/homyak<%= homyak_number %>.jpg">
-<form class="" action="/post_form" method="post">
+<img src="/assets/homyak<%=cookies[:number]%>.jpg">
+<form class="" action="/" method="post">
   <fieldset>
     <legend>Введите номер хомяка от 1 до 3:</legend>
-  <input type="text" name="number" value="">
-  <input type="submit" name="" value="Отправить номер">
+    <input type="text" name="number" value="">
+    <input type="submit" name="" value="Отправить номер">
   </fieldset>
 </form>
 </body>
