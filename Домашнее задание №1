@@ -34,7 +34,7 @@ a + b
 8) Что выведет на экран?
 
 my_role = "Teacher"
-my_role = "Student"
+my_role = "Student" 
 
 p my_role
 # ответ: Student
