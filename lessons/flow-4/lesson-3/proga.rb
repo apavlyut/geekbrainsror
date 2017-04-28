@@ -9,9 +9,6 @@
 # Программа:
 require 'nokogiri'
 require 'open-uri'
-# require 'expect'
-# require 'rspec'
-# require 'spec_helper'
 
 class Proga
 
