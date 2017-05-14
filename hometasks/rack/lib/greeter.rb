@@ -1,5 +1,5 @@
 require 'erb'
-require 'proga.rb'
+require File.expand_path('../../lib/proga', __FILE__)
 
 proga = Proga
 
