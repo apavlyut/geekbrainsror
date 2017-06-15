@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+
+RUBY VERSION
+   ruby 2.4.1p111
+
+BUNDLED WITH
+   1.15.1
