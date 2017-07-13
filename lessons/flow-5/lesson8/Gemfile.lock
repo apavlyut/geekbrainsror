@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    atk (3.1.6)
+      glib2 (= 3.1.6)
+    cairo (1.15.9)
+      native-package-installer (>= 1.0.3)
+      pkg-config (>= 1.2.2)
+    cairo-gobject (3.1.6)
+      cairo
+      glib2 (= 3.1.6)
+    gdk_pixbuf2 (3.1.6)
+      gio2 (= 3.1.6)
+    gio2 (3.1.6)
+      glib2 (= 3.1.6)
+      gobject-introspection (= 3.1.6)
+    glib2 (3.1.6)
+      native-package-installer (>= 1.0.3)
+      pkg-config (>= 1.2.2)
+    gobject-introspection (3.1.6)
+      glib2 (= 3.1.6)
+    green_shoes (1.1.374)
+      gtk2
+    gtk2 (3.1.6)
+      atk (= 3.1.6)
+      gdk_pixbuf2 (= 3.1.6)
+      pango (= 3.1.6)
+    native-package-installer (1.0.4)
+    pango (3.1.6)
+      cairo (>= 1.14.0)
+      cairo-gobject (= 3.1.6)
+      gobject-introspection (= 3.1.6)
+    pkg-config (1.2.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  green_shoes (= 1.1.374)
+
+RUBY VERSION
+   ruby 2.4.1p111
+
+BUNDLED WITH
+   1.15.1

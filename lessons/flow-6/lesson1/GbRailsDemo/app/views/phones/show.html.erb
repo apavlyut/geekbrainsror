@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @phone.vendor %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @phone.model %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @phone.version %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @phone.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @phone.description %>
+</p>
+
+<%= link_to 'Edit', edit_phone_path(@phone) %> |
+<%= link_to 'Back', phones_path %>

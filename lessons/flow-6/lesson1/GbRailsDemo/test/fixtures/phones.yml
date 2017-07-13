@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vendor: MyString
+  model: MyString
+  version: 1
+  price: 1.5
+  description: MyText
+
+two:
+  vendor: MyString
+  model: MyString
+  version: 1
+  price: 1.5
+  description: MyText
