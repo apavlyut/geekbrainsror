@@ -1,0 +1,6 @@
+<% if @comment.errors.empty? %>
+  $('#comments').append("<%= j render @comment %>");
+  $('#comments_form').html("<%= j render partial: 'comments/form', locals: {comment: @comment.commentable.comments.new} %>");
+<% else %>
+  $('#comments_form').html("<%= j render partial: 'comments/form', locals: {comment: @comment} %>");
+<% end %>

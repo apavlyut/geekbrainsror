@@ -1,0 +1,4 @@
+.comment id="comment_#{comment.id}"
+  p= comment.body
+  small =link_to 'удалить', comment, method: :delete, remote: true, data: {confirm: 'Точно удалить?'}
+  hr

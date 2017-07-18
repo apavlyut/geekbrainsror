@@ -1,0 +1,22 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @book.title
+p
+  strong Author:
+  = @book.author
+p
+  strong Isbn:
+  = @book.isbn
+
+= link_to 'Edit', edit_book_path(@book)
+'  |
+= link_to 'Back', books_path
+
+
+hr
+
+#comments = render @book.comments
+
+#comments_form = render partial: "comments/form", locals: {comment: @book.comments.new}

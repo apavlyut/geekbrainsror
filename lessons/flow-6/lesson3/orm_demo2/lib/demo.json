@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "id": "12",
+      "title": "123123",
+      "isbn": "d3dd",
+      "author_name": "Alex",
+      "reviews": [
+        {
+          "id": 1,
+          "body": "wow",
+          "author": {
+            "name": "Alex",
+            "age": 33
+          }
+        },
+        {
+          "id": 2,
+          "body": "wow2",
+          "author": {
+            "name": "Alex2",
+            "age": 33
+            "author_id": 12,
+          }
+        },
+      ]
+    }
+  ],
+  "authors": [
+    "id": 12
+  ]
+}

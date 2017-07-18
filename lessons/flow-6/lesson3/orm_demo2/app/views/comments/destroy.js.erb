@@ -1,0 +1,8 @@
+<% if !@comment.persisted? %>
+  var div = "#comment_<%= @comment.id %>";
+  $(div).fadeOut('fast', function(){
+    $(div).remove();
+  });
+<% else %>
+  alert('Не удалено');
+<% end %>
