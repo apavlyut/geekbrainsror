@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Announce:</strong>
+  <%= @post.announce %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @post.body %>
+</p>
+
+<p>
+  <strong>статус:</strong>
+  <%= @post.published? ? 'Опубликовано' : 'Черновик' %>
+</p>
+
+<%= link_to 'Опубликовать', publish_post_path(@post) %> |
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

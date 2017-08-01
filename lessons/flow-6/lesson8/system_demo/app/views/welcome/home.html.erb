@@ -1,0 +1,27 @@
+<h1>Хеллоу ворлд</h1>
+<p>Find me in app/views/welcome/home.html.erb</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Announce</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% Post.published.each do |post| %>
+      <tr>
+        <td><%= link_to post.title, post %></td>
+        <td><%= post.announce %></td>
+        <td><%= post.body %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
